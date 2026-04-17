@@ -82,7 +82,7 @@ const JournalSection = () => {
           >
             <h3 className="text-2xl font-bold text-foreground mb-4">Research Topics</h3>
             <p className="text-muted-foreground mb-8">
-              We welcome original research, review articles, and case studies across these key areas:
+              We welcome original research, review articles and case studies across these key areas:
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">

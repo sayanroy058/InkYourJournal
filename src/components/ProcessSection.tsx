@@ -10,7 +10,7 @@ const steps = [
   {
     icon: Search,
     title: "Peer Review",
-    description: "Expert reviewers from relevant fields evaluate your research for quality, originality, and significance.",
+    description: "Expert reviewers from relevant fields evaluate your research for quality, originality and significance.",
   },
   {
     icon: CheckCircle,

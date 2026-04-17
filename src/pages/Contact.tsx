@@ -26,7 +26,7 @@ const faqs = [
   { q: "Is there a publication fee?", a: "We charge a modest Article Processing Charge (APC) to cover production and hosting costs. Authors from low-income countries may apply for a waiver." },
   { q: "Can I track my submission?", a: "Yes. Once submitted, you'll receive login credentials to our editorial management portal where you can track every stage of the review process." },
   { q: "What file formats do you accept?", a: "We accept manuscripts in Microsoft Word (.docx) or LaTeX format. Figures should be submitted as high-resolution TIFF or EPS files (≥300 dpi)." },
-  { q: "Do you accept review articles?", a: "Yes, we publish original research articles, systematic reviews, meta-analyses, case reports, and rapid communications." },
+  { q: "Do you accept review articles?", a: "Yes, we publish original research articles, systematic reviews, meta-analyses, case reports and rapid communications." },
 ];
 
 const Contact = () => {

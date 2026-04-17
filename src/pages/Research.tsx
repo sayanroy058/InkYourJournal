@@ -172,7 +172,7 @@ const Research = () => {
               Our Biological Sciences Journal publishes high-impact, peer-reviewed research across diverse disciplines, including Molecular Biology, Microbiology, Pharmaceuticals, Biotechnology and Biomedical Sciences. We are committed to driving theoretical breakthroughs and real-world advancements that shape the future of healthcare, drug development and biological sciences innovation.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Join a global community of scientists, researchers, and industry experts contributing to cutting-edge discoveries that transform medicine, biotechnology and environmental science.
+              Join a global community of scientists, researchers and industry experts contributing to cutting-edge discoveries that transform medicine, biotechnology and environmental science.
             </p>
 
             <div className="grid sm:grid-cols-3 gap-6 mb-8">
@@ -349,7 +349,7 @@ const Research = () => {
                     "Manuscript formatted according to journal template",
                     "All figures and tables have captions and citations",
                     "References are complete and properly formatted",
-                    "Author names, affiliations, and emails are provided",
+                    "Author names, affiliations and emails are provided",
                     "No author names appear in main text (anonymity maintained)",
                     "Conflict of interest statement provided",
                     "Ethical approval obtained (if applicable)",

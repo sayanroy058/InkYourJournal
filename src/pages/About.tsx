@@ -18,10 +18,10 @@ const stats = [
 ];
 
 const values = [
-  { icon: Shield, title: "Scientific Integrity", color: "text-emerald-600 bg-emerald-50", desc: "We uphold the highest standards of research ethics, transparency, and reproducibility in every publication." },
+  { icon: Shield, title: "Scientific Integrity", color: "text-emerald-600 bg-emerald-50", desc: "We uphold the highest standards of research ethics, transparency and reproducibility in every publication." },
   { icon: Globe, title: "Open Access", color: "text-blue-600 bg-blue-50", desc: "All published articles are freely available worldwide, removing barriers to scientific knowledge." },
   { icon: Zap, title: "Innovation First", color: "text-amber-600 bg-amber-50", desc: "We actively seek groundbreaking research that pushes boundaries across biological sciences." },
-  { icon: Users, title: "Global Community", color: "text-purple-600 bg-purple-50", desc: "Connecting researchers, clinicians, and industry professionals across continents and disciplines." },
+  { icon: Users, title: "Global Community", color: "text-purple-600 bg-purple-50", desc: "Connecting researchers, clinicians and industry professionals across continents and disciplines." },
   { icon: Star, title: "Excellence", color: "text-rose-600 bg-rose-50", desc: "Rigorous peer-review ensures only the highest quality research earns publication in our journal." },
   { icon: Target, title: "Impact-Driven", color: "text-cyan-600 bg-cyan-50", desc: "We measure success by the real-world difference our published research makes in science and society." },
 ];
@@ -117,7 +117,7 @@ const About = () => {
               </div>
               <h2 className="text-2xl font-extrabold mb-4">Our Mission</h2>
               <p className="text-white/85 leading-relaxed">
-                To advance scientific knowledge by publishing rigorous, innovative research in biological sciences and pharmacy — making it freely accessible to researchers, clinicians, and policymakers worldwide.
+                To advance scientific knowledge by publishing rigorous, innovative research in biological sciences and pharmacy — making it freely accessible to researchers, clinicians and policymakers worldwide.
               </p>
               <ul className="mt-5 space-y-2">
                 {["Accelerate biomedical discovery", "Foster interdisciplinary collaboration", "Champion open-access science"].map(p => (
@@ -188,7 +188,7 @@ const About = () => {
             <span className="text-xs font-bold tracking-widest uppercase text-primary mb-3 block">Coverage</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Journal Scope</h2>
             <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-              We accept original research, comprehensive reviews, case studies, and rapid communications across these core disciplines.
+              We accept original research, comprehensive reviews, case studies and rapid communications across these core disciplines.
             </p>
           </motion.div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

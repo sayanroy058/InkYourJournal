@@ -86,11 +86,11 @@ const categoryColors: Record<string, string> = {
 
 const features = [
   { icon: ShieldCheck, title: "Double-Blind Peer Review", desc: "All manuscripts undergo rigorous double-blind review by 2–3 international domain experts." },
-  { icon: Globe, title: "Open Access", desc: "Published articles are immediately and permanently free to read, download, and share worldwide." },
+  { icon: Globe, title: "Open Access", desc: "Published articles are immediately and permanently free to read, download and share worldwide." },
   { icon: Clock, title: "Rapid Review", desc: "Average 4–6 week turnaround from submission to first editorial decision." },
-  { icon: Download, title: "Multiple Formats", desc: "Articles available as full-text HTML, downloadable PDF, and XML for automated indexing." },
-  { icon: Award, title: "Indexed & Cited", desc: "Indexed in Scopus, Web of Science, PubMed, and CrossRef with a DOI for every article." },
-  { icon: Layers, title: "All Article Types", desc: "Original research, review articles, case reports, letters, and rapid communications." },
+  { icon: Download, title: "Multiple Formats", desc: "Articles available as full-text HTML, downloadable PDF and XML for automated indexing." },
+  { icon: Award, title: "Indexed & Cited", desc: "Indexed in Scopus, Web of Science, PubMed and CrossRef with a DOI for every article." },
+  { icon: Layers, title: "All Article Types", desc: "Original research, review articles, case reports, letters and rapid communications." },
 ];
 
 const volumes = [
@@ -151,7 +151,7 @@ const Journal = () => {
               </h1>
               <p className="text-white/40 text-xs font-mono tracking-widest uppercase mb-3">ISSN: xxxx-xxxx • e-ISSN: xxxx-xxxx</p>
               <p className="text-white/70 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
-                A flagship open-access journal driving innovation across biological sciences, pharmacy, and allied health disciplines.
+                A flagship open-access journal driving innovation across biological sciences, pharmacy and allied health disciplines.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
                 {journalStats.map((s) => (
@@ -421,7 +421,7 @@ const Journal = () => {
                     "Manuscript formatted according to journal template",
                     "All figures and tables have captions and citations",
                     "References are complete and properly formatted",
-                    "Author names, affiliations, and emails are provided",
+                    "Author names, affiliations and emails are provided",
                     "Corresponding author contact information included",
                     "No author names appear in main text (anonymity maintained)",
                     "Conflict of interest statement provided",
@@ -455,7 +455,7 @@ const Journal = () => {
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-2">Structured Abstract</h4>
                     <p className="text-slate-600 text-sm">
-                      Maximum 250 words. Include: Background, Methods, Results, Conclusions, and Keywords (5-8).
+                      Maximum 250 words. Include: Background, Methods, Results, Conclusions and Keywords (5-8).
                     </p>
                   </div>
                 </div>

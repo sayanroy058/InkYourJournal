@@ -10,7 +10,7 @@ import {
 const steps = [
   { step: "01", title: "Prepare Your Manuscript", desc: "Format your paper according to our author guidelines. Use the provided Word or LaTeX template. Ensure all figures are high-resolution (≥300 dpi).", icon: FileText },
   { step: "02", title: "Create an Account", desc: "Register on our submission portal (or log in if you already have an account). You'll receive a confirmation email immediately.", icon: Users },
-  { step: "03", title: "Submit Online", desc: "Upload your manuscript, cover letter, and supplementary materials through our secure portal. Fill in author details and suggest potential reviewers.", icon: Upload },
+  { step: "03", title: "Submit Online", desc: "Upload your manuscript, cover letter and supplementary materials through our secure portal. Fill in author details and suggest potential reviewers.", icon: Upload },
   { step: "04", title: "Editorial Check", desc: "Our editorial office performs an initial check for scope and formatting within 3–5 business days and assigns a handling editor.", icon: Shield },
   { step: "05", title: "Peer Review", desc: "Your manuscript undergoes rigorous double-blind peer review by 2–3 domain experts. Average review time: 4–6 weeks.", icon: CheckCircle2 },
   { step: "06", title: "Decision & Publication", desc: "Receive an editorial decision with detailed reviewer comments. Accepted articles are published within 2 weeks of final acceptance.", icon: Globe },
@@ -198,7 +198,7 @@ const SubmitPaper = () => {
             </div>
             <h2 className="text-3xl font-extrabold text-white mb-4">Ready to Submit?</h2>
             <p className="text-white/65 mb-8 leading-relaxed">
-              Our online submission portal makes it easy to upload your manuscript, cover letter, and supplementary materials in minutes.
+              Our online submission portal makes it easy to upload your manuscript, cover letter and supplementary materials in minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -217,7 +217,7 @@ const SubmitPaper = () => {
               </Link>
             </div>
             <p className="text-white/40 text-xs mt-6">
-              By submitting, you confirm that the work is original, not published elsewhere, and that all co-authors have approved the submission.
+              By submitting, you confirm that the work is original, not published elsewhere and that all co-authors have approved the submission.
             </p>
           </motion.div>
         </div>

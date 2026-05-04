@@ -404,17 +404,17 @@ const Research = () => {
       )}
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-primary to-accent py-16 px-4">
+      <section className="bg-gradient-to-r from-primary to-emerald-500 py-8 px-4">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-primary-foreground mb-4">
+          <h2 className="text-xl md:text-2xl font-extrabold text-white mb-2">
             Ready to Submit Your Research?
           </h2>
-          <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
+          <p className="text-white/80 mb-6 max-w-xl mx-auto">
             Join hundreds of researchers worldwide who have published their work with us.
           </p>
           <Link
             to="/#contact"
-            className="inline-flex items-center gap-2 bg-primary-foreground text-foreground px-8 py-3.5 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-white text-primary px-8 py-3.5 rounded-lg font-semibold hover:shadow-xl transition-all"
           >
             Submit Manuscript <ArrowRight size={18} />
           </Link>

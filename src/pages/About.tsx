@@ -249,10 +249,10 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary to-emerald-500">
+      <section className="py-8 px-4 bg-gradient-to-r from-primary to-emerald-500">
         <div className="container mx-auto text-center max-w-2xl">
-          <h2 className="text-3xl font-extrabold text-white mb-4">Ready to Publish Your Research?</h2>
-          <p className="text-white/80 mb-8">Join thousands of researchers who trust our journal to share their discoveries with the world.</p>
+          <h2 className="text-2xl font-extrabold text-white mb-2">Ready to Publish Your Research?</h2>
+          <p className="text-white/80 mb-6">Join thousands of researchers who trust our journal to share their discoveries with the world.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link to="/submit" className="inline-flex items-center gap-2 bg-white text-primary px-7 py-3.5 rounded-xl font-bold hover:shadow-xl transition-all">
               Submit Manuscript <ArrowRight size={18} />

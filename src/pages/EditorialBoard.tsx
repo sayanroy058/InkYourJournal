@@ -16,6 +16,57 @@ const editorInChief = {
   specializations: ["Molecular Biology", "Drug Discovery", "Pharmaceutical Research", "Biomedical Sciences"],
 };
 
+const assistantEditors = [
+  {
+    name: "Dr. Lisa Anderson, PhD",
+    role: "Assistant Editor",
+    department: "Department of Immunology",
+    institution: "Harvard Medical School",
+    image: figImg,
+    bio: "Dr. Anderson specializes in immunotherapy and vaccine development. She has co-authored over 80 peer-reviewed publications and serves as an expert in emerging infectious diseases.",
+    specializations: ["Immunology", "Vaccine Development", "Immunotherapy"],
+  },
+  {
+    name: "Prof. David Kumar, PhD",
+    role: "Assistant Editor",
+    department: "Department of Microbiology",
+    institution: "University of Singapore",
+    image: figImg,
+    bio: "Prof. Kumar is a leading expert in microbial genomics and bioinformatics. His work has contributed to understanding pathogenic mechanisms in various microorganisms.",
+    specializations: ["Microbiology", "Genomics", "Bioinformatics"],
+  },
+];
+
+const reviewers = [
+  {
+    name: "Dr. Elena Rodriguez, PhD",
+    role: "Senior Reviewer",
+    department: "Department of Oncology",
+    institution: "Memorial Sloan Kettering Institute",
+    image: figImg,
+    bio: "Dr. Rodriguez is an expert in cancer biology and therapeutic research. She has published extensively on tumor immunology and precision medicine approaches.",
+    specializations: ["Oncology", "Cancer Biology", "Precision Medicine"],
+  },
+  {
+    name: "Prof. Yuki Tanaka, PhD",
+    role: "Senior Reviewer",
+    department: "Department of Genetics",
+    institution: "University of Tokyo",
+    image: figImg,
+    bio: "Prof. Tanaka specializes in epigenetics and gene regulation. Her research has illuminated the role of chromatin remodeling in disease development.",
+    specializations: ["Genetics", "Epigenetics", "Gene Regulation"],
+  },
+  {
+    name: "Dr. Marcus Olsen, PhD",
+    role: "Peer Reviewer",
+    department: "Department of Physiology",
+    institution: "Karolinska Institute",
+    image: figImg,
+    bio: "Dr. Olsen focuses on cardiovascular physiology and molecular mechanisms of heart disease. His contributions have advanced understanding of cardiac dysfunction.",
+    specializations: ["Physiology", "Cardiovascular Biology", "Molecular Medicine"],
+  },
+];
+
 const editorialMembers = [
   {
     name: "Prof. James Chen, PhD",
@@ -91,14 +142,14 @@ const EditorialBoard = () => {
       </section>
 
       {/* Editor-in-Chief */}
-      <section className="section-padding bg-white">
+      <section className="py-12 px-4 bg-white">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8"
           >
             <span className="text-xs font-semibold tracking-wider uppercase text-primary mb-3 block">
               Leadership
@@ -149,15 +200,123 @@ const EditorialBoard = () => {
         </div>
       </section>
 
-      {/* Editorial Members */}
-      <section className="section-padding bg-muted/50">
+      {/* Assistant Editors */}
+      <section className="py-12 px-4 bg-muted/50">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8"
+          >
+            <span className="text-xs font-semibold tracking-wider uppercase text-primary mb-3 block">
+              Editorial Team
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+              Assistant Editors
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {assistantEditors.map((member, i) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="bg-card rounded-xl border border-border card-shadow hover:elevated-shadow transition-shadow overflow-hidden"
+              >
+                <div className="p-6 text-center border-b border-border">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-20 h-20 rounded-full object-cover mx-auto mb-4 border-4 border-secondary"
+                  />
+                  <h3 className="text-base font-bold text-foreground">{member.name}</h3>
+                  <p className="text-sm font-medium text-primary mt-1">{member.role}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{member.institution}</p>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{member.bio}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {member.specializations.map((spec) => (
+                      <span key={spec} className="bg-secondary text-secondary-foreground text-[11px] px-2.5 py-1 rounded-full font-medium">
+                        {spec}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Reviewers */}
+      <section className="py-12 px-4 bg-white">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-8"
+          >
+            <span className="text-xs font-semibold tracking-wider uppercase text-primary mb-3 block">
+              Review Experts
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-foreground">
+              Reviewers
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {reviewers.map((member, i) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.08 }}
+                className="bg-card rounded-xl border border-border card-shadow hover:elevated-shadow transition-shadow overflow-hidden"
+              >
+                <div className="p-6 text-center border-b border-border">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-20 h-20 rounded-full object-cover mx-auto mb-4 border-4 border-secondary"
+                  />
+                  <h3 className="text-base font-bold text-foreground">{member.name}</h3>
+                  <p className="text-sm font-medium text-primary mt-1">{member.role}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{member.institution}</p>
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{member.bio}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {member.specializations.map((spec) => (
+                      <span key={spec} className="bg-secondary text-secondary-foreground text-[11px] px-2.5 py-1 rounded-full font-medium">
+                        {spec}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Editorial Members */}
+      <section className="py-12 px-4 bg-muted/50">
+        <div className="container mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-8"
           >
             <span className="text-xs font-semibold tracking-wider uppercase text-primary mb-3 block">
               Our Experts
@@ -203,15 +362,15 @@ const EditorialBoard = () => {
         </div>
       </section>
 
-      {/* Reviewer Guidelines */}
-      <section className="section-padding bg-background">
+      {/* Peer Review Standards */}
+      <section className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8"
           >
             <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4">
               Peer Review Standards
@@ -247,7 +406,7 @@ const EditorialBoard = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary to-emerald-500">
+      <section className="py-12 px-4 bg-gradient-to-r from-primary to-emerald-500">
         <div className="container mx-auto text-center max-w-2xl">
           <h2 className="text-3xl font-extrabold text-white mb-4">Interested in Joining the Editorial Board?</h2>
           <p className="text-white/80 mb-8">We welcome applications from leading researchers worldwide. Reach out to discuss how you can contribute.</p>

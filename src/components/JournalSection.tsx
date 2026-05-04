@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Microscope, HeartPulse, FlaskConical, Brain, Leaf, Pill, Calendar, User } from "lucide-react";
 import { Link } from "react-router-dom";
-import bioImg from "@/assets/bio-journal-card.jpg";
+import bioImg from "@/assets/istockphoto-1500469862-640x640.jpg";
 
 const topics = [
   { icon: HeartPulse, name: "Healthcare" },
